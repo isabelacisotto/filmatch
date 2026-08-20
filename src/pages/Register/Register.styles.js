@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "flex-start",
         paddingHorizontal: 20,
-        marginTop: 100,
+        marginTop: 50,
         width: "100%",
         height: 30,
         top: 0,
@@ -44,7 +44,7 @@ export const styles = StyleSheet.create({
         height: "100%",
         justifyContent: "center",
         paddingHorizontal: 20,
-        marginTop: 100,
+        marginTop: 50,
     },
 
     title: {

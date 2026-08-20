@@ -11,11 +11,20 @@ export function Login() {
                 resizeMode="cover"
             />
 
-            <SafeAreaView style={styles.safeArea}>
+            <SafeAreaView style={{
+              flex: 1,
+              justifyContent: "center",
+              alignItems: "center",
+              width: "100%",
+            }}>
                 <View style={styles.header}>
 
                 </View>
-                <Text>Entrar</Text>
+
+                <View style={styles.content}>
+                    <Text style={styles.title}>Entrar</Text>
+                    <Text style={styles.subtitle}>Continue sua sessão e descubra novas recomendações.</Text>
+                </View>
             </SafeAreaView>
         </View>
     )

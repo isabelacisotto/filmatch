@@ -7,8 +7,8 @@ const Stack = createNativeStackNavigator();
 export function AppRouter() {
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="Welcome" component={Welcome} />
+            <Stack.Screen name="Login" component={Login} />
         </Stack.Navigator>
     )
 }

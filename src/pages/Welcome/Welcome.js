@@ -1,9 +1,9 @@
-import React from "react";
-import { Image, Text, TouchableOpacity, View } from "react-native";
+import { Image, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { styles } from "./Welcome.styles";
-import { Clapperboard } from "lucide-react-native/icons";
+import { Clapperboard } from "lucide-react-native";
 import { useNavigation } from "@react-navigation/native";
+import { PrimaryButton, SecondaryButton } from "../../components/Button/Button";
 
 export function Welcome() {
   const navigation = useNavigation();
@@ -35,18 +35,10 @@ export function Welcome() {
         </View>
 
         <View style={styles.navButtons}>
-          <TouchableOpacity style={styles.buttonRegister}>
-            <Text style={styles.buttonText}>Começar</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={styles.buttonLogin}
-            onPress={() => navigation.navigate("Login")}
-          >
-            <Text style={styles.buttonText}>Já tenho uma conta</Text>
-          </TouchableOpacity>
+          <PrimaryButton text="Começar" onPress={() => navigation.navigate("Register")} />
+          <SecondaryButton text="Já tenho uma conta" onPress={() => navigation.navigate("Login")} />
         </View>
-      </SafeAreaView>
+      </SafeAreaView>         
     </View>
   );
 }

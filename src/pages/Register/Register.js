@@ -1,4 +1,4 @@
-import { Image, ScrollView, Text, TextInput, View } from "react-native";
+import { Alert, Image, ScrollView, Text, TextInput, View } from "react-native";
 import { styles } from "./Register.styles";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ChevronLeft, LockKeyhole, Mail, User } from "lucide-react-native";

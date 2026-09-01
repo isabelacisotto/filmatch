@@ -47,12 +47,7 @@ export function Login() {
       return;
     }
 
-    Alert.alert("Cadastro realizado", "Cadastro realizado com sucesso!", [
-      {
-        text: "Ir para a página de Login",
-        onPress: () => navigation.navigate("Login"),
-      },
-    ]);
+    Alert.alert("Login realizado", "Login realizado com sucesso!");
   }
 
   return (

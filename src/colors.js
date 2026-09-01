@@ -5,4 +5,5 @@ export const colors = {
   primary: "#ED1010",
   white: "#FFFFFF",
   gray: "#8F8F8F",
+  placeholder: "#B0B0B0",
 };

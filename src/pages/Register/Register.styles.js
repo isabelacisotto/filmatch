@@ -4,8 +4,7 @@ import { colors } from "../../colors";
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
+        position: "relative",
     },
 
     image: {
@@ -15,13 +14,25 @@ export const styles = StyleSheet.create({
     },
 
     overlay: {
-        flex: 1,
-        width: "100%",
-        height: "100%",
         position: "absolute",
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
         backgroundColor: "rgba(0, 0, 0, 0.5)",
         justifyContent: "center",
         alignItems: "center",
+    },
+
+    safeArea: {
+        flex: 1,
+        width: "100%",
+    },
+
+    scrollContent: {
+        flexGrow: 1,
+        width: "100%",
+        height: "120%",
     },
 
     header: {
@@ -30,7 +41,6 @@ export const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "flex-start",
         paddingHorizontal: 20,
-        marginTop: 50,
         width: "100%",
         height: 30,
         top: 0,
@@ -44,7 +54,7 @@ export const styles = StyleSheet.create({
         height: "100%",
         justifyContent: "center",
         paddingHorizontal: 20,
-        marginTop: 50,
+        marginTop: 10,
     },
 
     title: {
@@ -62,34 +72,6 @@ export const styles = StyleSheet.create({
 
     LoginForm: {
         marginTop: "15%",
-    },
-
-    label: {
-        fontSize: 14,
-        fontFamily: colors.poppinsMedium,
-        color: colors.white,
-        marginBottom: 4,
-    },
-
-    inputContainer: {
-        flexDirection: "row",
-        alignItems: "center",
-        width: "100%",
-        borderWidth: 1,
-        borderColor: colors.primary,
-        borderRadius: 4,
-        paddingHorizontal: 8,
-        marginBottom: 12,
-    },
-
-    input: {
-        flex: 1,
-        paddingVertical: 8,
-        paddingHorizontal: 8,
-        color: colors.white,
-        placeholderTextColor: colors.gray,
-        fontFamily: colors.poppinsRegular,
-        fontSize: 12,
     },
 
     register: {

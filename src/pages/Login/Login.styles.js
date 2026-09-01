@@ -4,8 +4,7 @@ import { colors } from "../../colors";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    position: "relative",
   },
 
   image: {
@@ -15,13 +14,19 @@ export const styles = StyleSheet.create({
   },
 
   overlay: {
-    flex: 1,
-    width: "100%",
-    height: "100%",
     position: "absolute",
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
     backgroundColor: "rgba(0, 0, 0, 0.5)",
     justifyContent: "center",
     alignItems: "center",
+  },
+
+  safeArea: {
+    flex: 1,
+    width: "100%",
   },
 
   header: {
@@ -44,7 +49,7 @@ export const styles = StyleSheet.create({
     height: "100%",
     justifyContent: "center",
     paddingHorizontal: 20,
-    marginTop: 100,
+    marginTop: 10,
   },
 
   title: {

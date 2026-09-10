@@ -6,4 +6,6 @@ export const colors = {
   white: "#FFFFFF",
   gray: "#8F8F8F",
   placeholder: "#B0B0B0",
+  background: "#121212",
+  bgCard: "#171717"
 };

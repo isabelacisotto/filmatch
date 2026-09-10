@@ -1,9 +1,9 @@
 import { Image, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { styles } from "./Welcome.styles";
-import { Clapperboard } from "lucide-react-native";
 import { useNavigation } from "@react-navigation/native";
 import { PrimaryButton, SecondaryButton } from "../../components/Button/Button";
+import { Logo } from "../../components/Logo/Logo";
 
 export function Welcome() {
   const navigation = useNavigation();
@@ -25,12 +25,7 @@ export function Welcome() {
         }}
       >
         <View style={styles.welcomeContainer}>
-          <Clapperboard size={55} color="#FFFFFF" />
-          <Text style={styles.welcomeText}>
-            Fil
-            <Text style={styles.filmatchSpan}>match</Text>
-          </Text>
-
+          <Logo />
           <Text style={styles.subTitle}>Seu próximo filme já deu match</Text>
         </View>
 

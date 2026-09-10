@@ -19,21 +19,11 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
   },
 
-  welcomeText: {
-    fontSize: 55,
-    fontFamily: colors.poppinsBold,
-    color: colors.white,
-  },
-
   subTitle: {
-    fontSize: 16,
+    fontSize: 14,
     fontFamily: colors.poppinsMedium,
     fontWeight: 200,
     color: colors.white,
-  },
-
-  filmatchSpan: {
-    color: colors.primary,
   },
 
   navButtons: {

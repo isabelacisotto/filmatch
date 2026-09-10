@@ -1,4 +1,6 @@
-export const colors = {
+import { StyleSheet } from "react-native";
+
+export const colors = StyleSheet.create({
   poppinsMedium: "Poppins_500Medium",
   poppinsBold: "Poppins_700Bold",
   poppinsRegular: "Poppins_400Regular",
@@ -8,4 +10,4 @@ export const colors = {
   placeholder: "#B0B0B0",
   background: "#121212",
   bgCard: "#171717"
-};
+})

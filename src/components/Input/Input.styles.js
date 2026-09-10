@@ -10,14 +10,13 @@ export const styles = {
     fontSize: 14,
     fontFamily: colors.poppinsRegular,
     color: colors.white,
-    marginBottom: 8,
+    marginBottom: 5,
   },
 
   input: {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: colors.background || "#",
     fontFamily: colors.poppinsRegular,
     color: colors.white || "#fffff",
     padding: 12,

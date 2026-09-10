@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 20,
         width: "100%",
         height: 30,
-        top: 0,
+        top: 60,
         left: 0,
         zIndex: 1,
         position: "absolute",

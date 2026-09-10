@@ -1,4 +1,4 @@
-import { Image, Text, TextInput, View } from "react-native";
+import { Alert, Image, Text, TextInput, View } from "react-native";
 import { styles } from "./Login.styles";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ChevronLeft, LockKeyhole, Mail } from "lucide-react-native";
@@ -11,43 +11,34 @@ export function Login() {
   const navigation = useNavigation();
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
-  const [confirmarSenha, setConfirmarSenha] = useState("");
 
   function handleLogin() {
-    if (
-      !email.trim() ||
-      !senha.trim() ||
-      !confirmarSenha.trim()
-    ) {
-      Alert.alert(
-        "Campos incompletos",
-        "Por favor, preencha todos os campos do formulário.",
-      );
-      return;
-    }
+    // if (
+    //   !email.trim() ||
+    //   !senha.trim()
+    // ) {
+    //   Alert.alert(
+    //     "Campos incompletos",
+    //     "Por favor, preencha todos os campos do formulário.",
+    //   );
+    //   return;
+    // }
 
-    if (!email.includes("@") || !email.includes(".")) {
-      Alert.alert("E-mail inválido", "Por favor, insira um e-mail válido.");
-      return;
-    }
+    // if (!email.includes("@") || !email.includes(".")) {
+    //   Alert.alert("E-mail inválido", "Por favor, insira um e-mail válido.");
+    //   return;
+    // }
 
-    if (senha.length < 6) {
-      Alert.alert(
-        "Senha inválida",
-        "A senha deve ter pelo menos 6 caracteres.",
-      );
-      return;
-    }
-
-    if (senha !== confirmarSenha) {
-      Alert.alert(
-        "Senhas não coincidem",
-        "As senhas digitadas não coincidem. Por favor, tente novamente.",
-      );
-      return;
-    }
+    // if (senha.length < 6) {
+    //   Alert.alert(
+    //     "Senha inválida",
+    //     "A senha deve ter pelo menos 6 caracteres.",
+    //   );
+    //   return;
+    // }
 
     Alert.alert("Login realizado", "Login realizado com sucesso!");
+    navigation.navigate("Home");
   }
 
   return (

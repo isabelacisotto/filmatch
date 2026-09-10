@@ -4,17 +4,18 @@ import { colors } from "../../colors";
 import { styles } from "./Footer.styles";
 
 const footerItems = [
-    { label: "Início", icon: House, active: true },
+    { label: "Início", icon: House },
     { label: "Explorar", icon: Compass },
-    { label: "Minha Lista", icon: Bookmark },
+    { label: "Minha Lista", icon: Bookmark  },
     { label: "Perfil", icon: UserRound },
-];
+];  
 
-export function Footer({ onItemPress }) {
+export function Footer({ onItemPress, isActive }) {
+
     return (
         <View style={styles.footerContainer}>
-            {footerItems.map(({ label, icon: Icon, active }) => {
-                const color = active ? colors.primary : colors.white;
+            {footerItems.map(({ label, icon: Icon }) => {
+                const color = isActive === label ? colors.primary : colors.white;
 
                 return (
                     <TouchableOpacity

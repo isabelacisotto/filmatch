@@ -82,11 +82,9 @@ export function Home() {
                             <GenresCard genre="Suspense" icon={<Activity color={colors.primary}/>} />
                         </View>
                     </View>
-
-                    
                 </View>
             </ScrollView>
-            <Footer />
+            <Footer isActive={"Início"} />
         </SafeAreaView >
     )
 }

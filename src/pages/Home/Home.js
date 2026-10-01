@@ -8,8 +8,10 @@ import { MockFilms } from "../../data/MockFilms";
 import { FilmCard } from "../../components/FilmCard/FilmCard";
 import { GenresCard } from "../../components/GenresCard/GenresCard";
 import { Footer } from "../../components/Footer/Footer";
+import { useNavigation } from "@react-navigation/native";
 
 export function Home() {
+    const navigation = useNavigation();
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
@@ -74,12 +76,36 @@ export function Home() {
                         </View>
                         
                         <View style={styles.exploreGenresCards}>
-                            <GenresCard genre="Ação" icon={<Sword color={colors.primary} />} />
-                            <GenresCard genre="Romance" icon={<Heart color={colors.primary}/>} />
-                            <GenresCard genre="Terror" icon={<Skull color={colors.primary}/>} />
-                            <GenresCard genre="Drama" icon={<Book color={colors.primary}/>} />
-                            <GenresCard genre="Comédia" icon={<Laugh color={colors.primary}/>} />
-                            <GenresCard genre="Suspense" icon={<Activity color={colors.primary}/>} />
+                            <GenresCard 
+                                genre="Ação" 
+                                icon={<Sword color={colors.primary} />} 
+                                onPress={() => { navigation.navigate("ListGenres", { genre: "Ação" }) }} 
+                            />
+                            <GenresCard 
+                                genre="Romance" 
+                                icon={<Heart color={colors.primary}/>} 
+                                onPress={() => { navigation.navigate("ListGenres", { genre: "Romance" }) }} 
+                            />
+                            <GenresCard 
+                                genre="Terror" 
+                                icon={<Skull color={colors.primary}/>} 
+                                onPress={() => { navigation.navigate("ListGenres", { genre: "Terror" }) }} 
+                            />
+                            <GenresCard 
+                                genre="Drama" 
+                                icon={<Book color={colors.primary}/>} 
+                                onPress={() => { navigation.navigate("ListGenres", { genre: "Drama" }) }} 
+                            />
+                            <GenresCard 
+                                genre="Comédia" 
+                                icon={<Laugh color={colors.primary}/>} 
+                                onPress={() => { navigation.navigate("ListGenres", { genre: "Comédia" }) }} 
+                            />
+                            <GenresCard 
+                                genre="Suspense" 
+                                icon={<Activity color={colors.primary}/>} 
+                                onPress={() => { navigation.navigate("ListGenres", { genre: "Suspense" }) }} 
+                            />
                         </View>
                     </View>
                 </View>

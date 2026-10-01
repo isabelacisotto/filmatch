@@ -3,6 +3,7 @@ import { Welcome }from "../pages/Welcome/Welcome";
 import { Login }from "../pages/Login/Login";
 import { Register } from "../pages/Register/Register";
 import { Home } from "../pages/Home/Home";
+import { ListGenres } from "../pages/ListView/ListGenres";
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +14,7 @@ export function AppRouter() {
             <Stack.Screen name="Register" component={Register} />
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="ListGenres" component={ListGenres} />
         </Stack.Navigator>
     )
 }

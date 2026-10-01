@@ -7,6 +7,7 @@ export const MockFilms = [
         rating: 8.7,
         lauchYear: 2014,
         niche: ["Ficção científica", "Drama"],
+        classification: "Livre",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const MockFilms = [
         rating: 6.4,
         lauchYear: 2010,
         niche: ["Fantasia", "Aventura"],
+        classification: "Livre",
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ export const MockFilms = [
         rating: 7.5,
         lauchYear: 2017,
         niche: ["Ação", "Crime"],
+        classification: 14,
     },
     {
         id: 4,
@@ -34,6 +37,7 @@ export const MockFilms = [
         rating: 8.6,
         lauchYear: 2002,
         niche: ["Crime", "Drama"],
+        classification: 16,
     },
     {
         id: 5,
@@ -43,6 +47,7 @@ export const MockFilms = [
         rating: 9.2,
         lauchYear: 1972,
         niche: ["Crime", "Drama"],
+        classification: 18,
     },
     {
         id: 6,
@@ -52,6 +57,7 @@ export const MockFilms = [
         rating: 7.9,
         lauchYear: 2001,
         niche: ["Fantasia", "Aventura"],
+        classification: 12,
     },
     {
         id: 7,
@@ -61,6 +67,7 @@ export const MockFilms = [
         rating: 7.4,
         lauchYear: 2014,
         niche: ["Ação", "Thriller"],
+        classification: 16,
     },
     {
         id: 8,
@@ -70,6 +77,7 @@ export const MockFilms = [
         rating: 6.6,
         lauchYear: 2024,
         niche: ["Terror", "Suspense"],
+        classification: 18,
     },
     {
         id: 9,
@@ -79,6 +87,7 @@ export const MockFilms = [
         rating: 8.1,
         lauchYear: 2015,
         niche: ["Ação", "Ficção científica"],
+        classification: 16,
     },
     {
         id: 10,
@@ -88,6 +97,7 @@ export const MockFilms = [
         rating: 8.7,
         lauchYear: 1999,
         niche: ["Ficção científica", "Ação"],
+        classification: 16,
     },
     {
         id: 11,
@@ -97,6 +107,7 @@ export const MockFilms = [
         rating: 7.1,
         lauchYear: 1996,
         niche: ["Ação", "Espionagem"],
+        classification: 14,
     },
     {
         id: 12,
@@ -106,6 +117,7 @@ export const MockFilms = [
         rating: 6.9,
         lauchYear: 1986,
         niche: ["Ação", "Drama"],
+        classification: 14,
     },
     {
         id: 13,
@@ -115,5 +127,6 @@ export const MockFilms = [
         rating: 8.5,
         lauchYear: 2014,
         niche: ["Drama", "Música"],
+        classification: 16,
     },
 ]

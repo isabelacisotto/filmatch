@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
 		height: 100,
 		justifyContent: "center",
 		paddingHorizontal: 8,
-		width: 115,
+		width: 110 ,
 	},
 
 	genreCardIcon: {
